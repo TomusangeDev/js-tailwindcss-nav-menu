@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="TomusangeDev">
+    <meta name="description" content="Responsive navigation menu built with Tailwind CSS and JavaScript. Desktop and mobile-friendly with fixed top nav.">
+    <meta name="keywords" content="Tailwind CSS, responsive nav, JavaScript, menu, web development, TomusangeDev">
+    <!-- Tailwind generated CSS -->
+    <link rel="stylesheet" href="dist/style.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="customCss/customCss.css">
+    <title>Responsive Tailwind CSS Nav Menu by TomusangeDev</title>
+</head>
+<body class="bg-gray-300 h-96">
+
+    <!-- Desktop nav -->
+    <nav class="bg-blue-600 fixed top-0 left-0 w-full z-50 px-4 py-4 text-white">
+        <div class="max-w-7xl mx-auto items-center flex justify-between">
+            <a href="https://github.com/TomusangeDev">
+                <div class="text-2xl font-bold hover:text-gray-300 transition duration-200">
+                    MyBrand
+                </div>
+            </a>
+
+            <!-- Hamburger btn (mobile) -->
+             <button id="mobileBtn" class="md:hidden flex flex-col justify-between w-7 h-5 transition duration-500">
+                <span class="block bg-white transition duration-100"></span>
+                <span class="block bg-white transition duration-100"></span>
+                <span class="block bg-white transition duration-100"></span>
+             </button>
+
+            <ul class="hidden md:flex space-x-4">
+                <li><a class="font-bold hover:bg-orange-400 bg-orange-400 px-4 py-2 rounded-md hover:text-black text-black transition-all duration-200 ease-out" href="#">HOME</a></li>
+                <li><a class="font-bold hover:bg-orange-400 px-4 py-2 rounded-md hover:text-black transition-all duration-200 ease-out" href="#">ABOUT</a></li>
+                <li><a class="font-bold hover:bg-orange-400 px-4 py-2 rounded-md hover:text-black transition-all duration-200 ease-out" href="#">SERVICES</a></li>
+                <li><a class="font-bold hover:bg-orange-400 px-4 py-2 rounded-md hover:text-black transition-all duration-200 ease-out" href="#">PRODUCTS</a></li>
+                <li><a class="font-bold hover:bg-orange-400 px-4 py-2 rounded-md hover:text-black transition-all duration-200 ease-out" href="#">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class=" md:hidden transform translate-x-full transition duration-500 bg-blue-600 text-white mt-16 w-8/12 min-h-screen fixed right-0">
+        <ul>
+            <li><a class="text-black font-bold bg-orange-400 hover:bg-orange-400 block w-full p-4 transition-all duration-200 ease-out" href="#">HOME</a></li>
+            <li><a class="hover:text-black font-bold hover:bg-orange-400 block w-full p-4 transition-all duration-200 ease-out" href="">ABOUT</a></li>
+            <li><a class="hover:text-black font-bold hover:bg-orange-400 block w-full p-4 transition-all duration-200 ease-out" href="">SERVICES</a></li>
+            <li><a class="hover:text-black font-bold hover:bg-orange-400 block w-full p-4 transition-all duration-200 ease-out" href="">PRODUCTS</a></li>
+            <li><a class="hover:text-black font-bold hover:bg-orange-400 block w-full p-4 transition-all duration-200 ease-out" href="">CONTACT</a></li>
+        </ul>
+        <div class="text-gray-300 fixed bottom-0 px-4 pb-4 text-center">
+            <p class="mb-2">&copy; 2026 TomusangeDev</p>
+            <p><a href="https://github.com/TomusangeDev/js-tailwindcss-nav-menu#" class="underline hover:text-gray-200">Github Repository</a></p>
+        </div>
+    </div>
+
+
+    <main class="pt-16">
+        <section class="p-8">
+            <h1 class="text-3xl mb-4">I, <a class="text-blue-900" href="https://github.com/TomusangeDev">TomusangeDev</a>, Developed This Responsive Tailwind CSS Nav Menu</h1>
+            <p class="text-gray-600 mb-6">Built with Tailwind CSS and JavaScript. Fully responsive and mobile-friendly.</p>
+            <div class="h-screen">
+                <p class="leading-10">Scroll dowm to see the nav stay fixed at the top. <button>
+                    <a class="bg-blue-900 text-gray-300 font-semibold px-4 py-2 rounded hover:bg-blue-700 transition duration-200" href="https://github.com/TomusangeDev/js-tailwindcss-nav-menu.git">Download Code</a>
+                </button></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="mb-2">&copy; 2026 TomusangeDev</p>
+            <p><a href="https://github.com/TomusangeDev/js-tailwindcss-nav-menu#" class="underline hover:text-gray-300">Github Repository</a></p>
+        </div>
+    </footer>
+
+    <!-- Custom js -->
+    <script src="customJs/customScript.js"></script>
+</body>
+</html>
