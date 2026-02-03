@@ -14,7 +14,7 @@ This project is perfect for **beginners learning Tailwind CSS and basic JavaScri
 ---
 
 ## Live Demo
-Check it out live here: [Responsive Nav Menu Live View](https://tomusangedev.github.io/js-tailwindcss-nav-menu/)
+Check it out live here: [Responsive Nav Menu Demo](https://tomusangedev.github.io/js-tailwindcss-nav-menu/)
 
 ---
 
